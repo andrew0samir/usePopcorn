@@ -162,11 +162,11 @@ function Search({ query, setQuery }) {
 
     const inputEl = useRef(null);
 
-    useKey("Enter" , function(){
+    useKey("Enter", function () {
         if (document.activeElement === inputEl.current) return;
-                inputEl.current.focus();
-                setQuery("");
-    } );
+        inputEl.current.focus();
+        setQuery("");
+    });
 
     //// that way works but its not declaritive way 
     //// cause we must select the element manually
@@ -314,12 +314,12 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
         onCloseMovie();
     }
 
-    useKey("Escape" , onCloseMovie)
+    useKey("Escape", onCloseMovie)
 
     useEffect(function () {
         async function getMovieDetails() {
             setIsLoading(true);
-            const res = await fetch(`http://www.omdbapi.com/?apikey=${KEY}&i=${selectedId}`)
+            const res = await fetch(`https://www.omdbapi.com/?apikey=${KEY}&i=${selectedId}`)
             const data = await res.json();
             setMovie(data);
             setIsLoading(false);
