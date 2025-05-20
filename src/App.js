@@ -4,6 +4,7 @@ import { useMovies } from "./useMovies";
 import { useLocalStorageState } from "./useLocalStorageState";
 import { useKey } from "./useKey";
 
+// eslint-disable-next-line no-unused-vars
 const tempMovieData = [
     {
         imdbID: "tt1375666",
@@ -28,6 +29,7 @@ const tempMovieData = [
     },
 ];
 
+// eslint-disable-next-line no-unused-vars
 const tempWatchedData = [
     {
         imdbID: "tt1375666",
