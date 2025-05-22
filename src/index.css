@@ -344,6 +344,73 @@ body {
   justify-content: center;
 }
 
+@media only screen and (max-width: 767px) {
+  .nav-bar {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .num-results {
+    justify-self: center;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .main {
+    flex-direction: column;
+    height: auto;
+    padding: 0 1.6rem;
+  }
+
+  .box {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .list {
+    padding: 2rem 0;
+  }
+
+  .list li {
+    position: relative;
+    display: block;
+  }
+
+  .btn-delete {
+    top: 1rem;
+  }
+
+  .details header {
+    flex-direction: column;
+  }
+
+  .details img {
+    width: 100%;
+  }
+
+  .details section {
+    padding: 2rem;
+  }
+
+  .summary {
+    padding: 1.6rem;
+  }
+
+  .summary div {
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: flex-start;
+  }
+}
+
 /*
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
